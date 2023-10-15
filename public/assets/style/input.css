@@ -1,0 +1,6 @@
+@import "./layer/base.pcss";
+@import "./layer/components.pcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

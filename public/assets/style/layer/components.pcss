@@ -1,0 +1,16 @@
+@layer components {
+  .burger-strip {
+    @apply h-[2px] w-full rounded-lg bg-black/60 transition duration-[0.55s] ease-burger dark:bg-white;
+    &.active {
+      &:nth-child(1) {
+        @apply translate-y-[6px] dark:bg-gray-800;
+      }
+      &:nth-child(2) {
+        @apply opacity-0 dark:bg-gray-800;
+      }
+      &:nth-child(3) {
+        @apply -translate-y-[6px] dark:bg-gray-800;
+      }
+    }
+  }
+}
